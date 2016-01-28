@@ -30,21 +30,12 @@ console.log(myArray.sort(compare));
 
 var person = [
     {name: "Sonia", email: "sonia@gmail.com"},
-    {name: "Steph", email: "stehp@gmail.com"},
-    {name: "Robin", email: "robin@gmail.com"},
+    {name: "Ste", email: "ste@gmail.com"},
+    {name: "Ro", email: "ro@gmail.com"},
     ];
 
-function compare (obj1, obj2) {
-    
-    if (name.length < email.length) {
-     return -1;
-    }
-    if (name.length > email.length) {
-     return 1;
-    }
-  return 0;
-}
-
+var sorted = person.sort(function (a, b) { return b.length - a.length });
+console.log(sorted[0]);
 
 
 
@@ -52,5 +43,7 @@ function compare (obj1, obj2) {
 //This function should take a number and return its square. 
 //Then, use this function with map on an array of numbers to check the result.
 
-var myArray = ["flat", "studio", "appartment", "home"];
+var numbers = [4, 9, 16];
+var square = numbers.map(Math.sqrt);
+
 
