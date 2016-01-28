@@ -72,7 +72,7 @@ function multiply (obj) {
     return obj.num * obj.num;
 }
 var square = numObj.map(multiply);
-console.log(square);
+//console.log(square);
 // map acts like a loop. It creates a new array 
 
 //Here we are going to do the same but at a higher order. 
