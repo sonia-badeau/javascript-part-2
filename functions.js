@@ -20,7 +20,7 @@ compare(string1, string2);
 
 
 var myArray = ["flat", "studio", "appartment", "home"];
-console.log(myArray.sort(compare));
+//console.log(myArray.sort(compare));
 
 
 //Create an array of objects (don’t need to use new here, just regular object literals). 
@@ -33,10 +33,11 @@ var person = [
     {name: "Ste", email: "ste@gmail.com"},
     {name: "Ro", email: "ro@gmail.com"},
     ];
-
-var sorted = person.sort(function (a, b) { return b.length - a.length });
-console.log(sorted[0]);
-
+function compareLength(obj1, obj2) {
+    return obj1.name.length - obj2.name.length
+}
+//console.log(sorted[0]);
+var sorted = person.sort(compareLength);
 
 
 //Create a function that can be used with Array.prototype.map. 
